@@ -1,0 +1,13 @@
+*.ipr
+*.iws
+*.iml
+node_modules/
+/test-coverage
+reports
+npm-debug.log
+.idea
+build
+target
+build-cache
+*.i18n
+/nbproject/private/
