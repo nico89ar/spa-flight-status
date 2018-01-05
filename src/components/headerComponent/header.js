@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
 
-
 class Header extends Component {
-  render() {
-    return (
-      <header>
-      <div className="logo">
-        SOUTHWEST LOGO
-      </div>
-      <nav>
-      </nav>
-      </header>
-    );
-  }
+    render() {
+        return (
+            <div className="container header-container">
+                <div className="row">
+                    <div className="col">
+                        Southwest Logo
+                    </div>
+                </div>
+            </div>
+        );
+    }
 }
 
 export default Header;

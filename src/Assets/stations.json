@@ -1,0 +1,602 @@
+{"airStations":{
+  "CAK" : {
+    "airportCode" : "CAK",
+    "stationName" : "Akron-Canton",
+    "stateFederalUnit" : "OH",
+    "timeZone" : "America/New_York"
+  },
+  "ALB" : {
+    "airportCode" : "ALB",
+    "stationName" : "Albany",
+    "stateFederalUnit" : "NY",
+    "timeZone" : "America/New_York"
+  },
+  "ABQ" : {
+    "airportCode" : "ABQ",
+    "stationName" : "Albuquerque",
+    "stateFederalUnit" : "NM",
+    "timeZone" : "America/Denver"
+  },
+  "AMA" : {
+    "airportCode" : "AMA",
+    "stationName" : "Amarillo",
+    "stateFederalUnit" : "TX",
+    "timeZone" : "America/Chicago"
+  },
+  "AUA" : {
+    "airportCode" : "AUA",
+    "stationName" : "Aruba",
+    "stateFederalUnit" : "Aruba",
+    "timeZone" : "America/Aruba"
+  },
+  "ATL" : {
+    "airportCode" : "ATL",
+    "stationName" : "Atlanta",
+    "stateFederalUnit" : "GA",
+    "timeZone" : "America/New_York"
+  },
+  "AUS" : {
+    "airportCode" : "AUS",
+    "stationName" : "Austin",
+    "stateFederalUnit" : "TX",
+    "timeZone" : "America/Chicago"
+  },
+  "BWI" : {
+    "airportCode" : "BWI",
+    "stationName" : "Baltimore/Washington",
+    "stateFederalUnit" : "MD",
+    "timeZone" : "America/New_York"
+  },
+  "BZE" : {
+    "airportCode" : "BZE",
+    "stationName" : "Belize City",
+    "stateFederalUnit" : "Belize",
+    "timeZone" : "America/Belize"
+  },
+  "BHM" : {
+    "airportCode" : "BHM",
+    "stationName" : "Birmingham",
+    "stateFederalUnit" : "AL",
+    "timeZone" : "America/Chicago"
+  },
+  "BOI" : {
+    "airportCode" : "BOI",
+    "stationName" : "Boise",
+    "stateFederalUnit" : "ID",
+    "timeZone" : "America/Denver"
+  },
+  "BOS" : {
+    "airportCode" : "BOS",
+    "stationName" : "Boston Logan",
+    "stateFederalUnit" : "MA",
+    "timeZone" : "America/New_York"
+  },
+  "BUF" : {
+    "airportCode" : "BUF",
+    "stationName" : "Buffalo/Niagara",
+    "stateFederalUnit" : "NY",
+    "timeZone" : "America/New_York"
+  },
+  "BUR" : {
+    "airportCode" : "BUR",
+    "stationName" : "Burbank",
+    "stateFederalUnit" : "CA",
+    "timeZone" : "America/Los_Angeles"
+  },
+  "SJD" : {
+    "airportCode" : "SJD",
+    "stationName" : "Cabo San Lucas/Los Cabos",
+    "stateFederalUnit" : "MX",
+    "timeZone" : "America/Mazatlan"
+  },
+  "CUN" : {
+    "airportCode" : "CUN",
+    "stationName" : "Cancun",
+    "stateFederalUnit" : "Mexico",
+    "timeZone" : "America/Jamaica"
+  },
+  "CHS" : {
+    "airportCode" : "CHS",
+    "stationName" : "Charleston",
+    "stateFederalUnit" : "SC",
+    "timeZone" : "America/New_York"
+  },
+  "CLT" : {
+    "airportCode" : "CLT",
+    "stationName" : "Charlotte",
+    "stateFederalUnit" : "NC",
+    "timeZone" : "America/New_York"
+  },
+  "MDW" : {
+    "airportCode" : "MDW",
+    "stationName" : "Chicago (Midway)",
+    "stateFederalUnit" : "IL",
+    "timeZone" : "America/Chicago"
+  },
+  "CLE" : {
+    "airportCode" : "CLE",
+    "stationName" : "Cleveland",
+    "stateFederalUnit" : "OH",
+    "timeZone" : "America/New_York"
+  },
+  "CMH" : {
+    "airportCode" : "CMH",
+    "stationName" : "Columbus",
+    "stateFederalUnit" : "OH",
+    "timeZone" : "America/New_York"
+  },
+  "CRP" : {
+    "airportCode" : "CRP",
+    "stationName" : "Corpus Christi",
+    "stateFederalUnit" : "TX",
+    "timeZone" : "America/Chicago"
+  },
+  "DAL" : {
+    "airportCode" : "DAL",
+    "stationName" : "Dallas (Love Field)",
+    "stateFederalUnit" : "TX",
+    "timeZone" : "America/Chicago"
+  },
+  "DAY" : {
+    "airportCode" : "DAY",
+    "stationName" : "Dayton",
+    "stateFederalUnit" : "OH",
+    "timeZone" : "America/New_York"
+  },
+  "DEN" : {
+    "airportCode" : "DEN",
+    "stationName" : "Denver",
+    "stateFederalUnit" : "CO",
+    "timeZone" : "America/Denver"
+  },
+  "DSM" : {
+    "airportCode" : "DSM",
+    "stationName" : "Des Moines",
+    "stateFederalUnit" : "IA",
+    "timeZone" : "America/Chicago"
+  },
+  "DTW" : {
+    "airportCode" : "DTW",
+    "stationName" : "Detroit",
+    "stateFederalUnit" : "MI",
+    "timeZone" : "America/New_York"
+  },
+  "ELP" : {
+    "airportCode" : "ELP",
+    "stationName" : "El Paso",
+    "stateFederalUnit" : "TX",
+    "timeZone" : "America/Denver"
+  },
+  "FNT" : {
+    "airportCode" : "FNT",
+    "stationName" : "Flint",
+    "stateFederalUnit" : "MI",
+    "timeZone" : "America/New_York"
+  },
+  "FLL" : {
+    "airportCode" : "FLL",
+    "stationName" : "Ft. Lauderdale",
+    "stateFederalUnit" : "FL",
+    "timeZone" : "America/New_York"
+  },
+  "RSW" : {
+    "airportCode" : "RSW",
+    "stationName" : "Ft. Myers",
+    "stateFederalUnit" : "FL",
+    "timeZone" : "America/New_York"
+  },
+  "GCM" : {
+    "airportCode" : "GCM",
+    "stationName" : "Grand Cayman",
+    "stateFederalUnit" : "KY",
+    "timeZone" : "America/Cayman"
+  },
+  "GRR" : {
+    "airportCode" : "GRR",
+    "stationName" : "Grand Rapids",
+    "stateFederalUnit" : "MI",
+    "timeZone" : "America/New_York"
+  },
+  "GSP" : {
+    "airportCode" : "GSP",
+    "stationName" : "Greenville/Spartanburg",
+    "stateFederalUnit" : "SC",
+    "timeZone" : "America/New_York"
+  },
+  "HRL" : {
+    "airportCode" : "HRL",
+    "stationName" : "Harlingen",
+    "stateFederalUnit" : "TX",
+    "timeZone" : "America/Chicago"
+  },
+  "BDL" : {
+    "airportCode" : "BDL",
+    "stationName" : "Hartford",
+    "stateFederalUnit" : "CT",
+    "timeZone" : "America/New_York"
+  },
+  "HAV" : {
+    "airportCode" : "HAV",
+    "stationName" : "Havana",
+    "stateFederalUnit" : "Cuba",
+    "timeZone" : "Cuba"
+  },
+  "HOU" : {
+    "airportCode" : "HOU",
+    "stationName" : "Houston (Hobby)",
+    "stateFederalUnit" : "TX",
+    "timeZone" : "America/Chicago"
+  },
+  "IND" : {
+    "airportCode" : "IND",
+    "stationName" : "Indianapolis",
+    "stateFederalUnit" : "IN",
+    "timeZone" : "America/New_York"
+  },
+  "JAX" : {
+    "airportCode" : "JAX",
+    "stationName" : "Jacksonville",
+    "stateFederalUnit" : "FL",
+    "timeZone" : "America/New_York"
+  },
+  "MCI" : {
+    "airportCode" : "MCI",
+    "stationName" : "Kansas City",
+    "stateFederalUnit" : "MO",
+    "timeZone" : "America/Chicago"
+  },
+  "LAS" : {
+    "airportCode" : "LAS",
+    "stationName" : "Las Vegas",
+    "stateFederalUnit" : "NV",
+    "timeZone" : "America/Los_Angeles"
+  },
+  "LIR" : {
+    "airportCode" : "LIR",
+    "stationName" : "Liberia",
+    "stateFederalUnit" : "Costa Rica",
+    "timeZone" : "America/Costa_Rica"
+  },
+  "LIT" : {
+    "airportCode" : "LIT",
+    "stationName" : "Little Rock",
+    "stateFederalUnit" : "AR",
+    "timeZone" : "America/Chicago"
+  },
+  "LGB" : {
+    "airportCode" : "LGB",
+    "stationName" : "Long Beach",
+    "stateFederalUnit" : "CA",
+    "timeZone" : "America/Los_Angeles"
+  },
+  "ISP" : {
+    "airportCode" : "ISP",
+    "stationName" : "Long Island/Islip",
+    "stateFederalUnit" : "NY",
+    "timeZone" : "America/New_York"
+  },
+  "LAX" : {
+    "airportCode" : "LAX",
+    "stationName" : "Los Angeles",
+    "stateFederalUnit" : "CA",
+    "timeZone" : "America/Los_Angeles"
+  },
+  "SDF" : {
+    "airportCode" : "SDF",
+    "stationName" : "Louisville",
+    "stateFederalUnit" : "KY",
+    "timeZone" : "America/New_York"
+  },
+  "LBB" : {
+    "airportCode" : "LBB",
+    "stationName" : "Lubbock",
+    "stateFederalUnit" : "TX",
+    "timeZone" : "America/Chicago"
+  },
+  "MHT" : {
+    "airportCode" : "MHT",
+    "stationName" : "Manchester",
+    "stateFederalUnit" : "NH",
+    "timeZone" : "America/New_York"
+  },
+  "MEM" : {
+    "airportCode" : "MEM",
+    "stationName" : "Memphis",
+    "stateFederalUnit" : "TN",
+    "timeZone" : "America/Chicago"
+  },
+  "MEX" : {
+    "airportCode" : "MEX",
+    "stationName" : "Mexico City",
+    "stateFederalUnit" : "Mexico",
+    "timeZone" : "America/Mexico_City"
+  },
+  "MAF" : {
+    "airportCode" : "MAF",
+    "stationName" : "Midland/Odessa",
+    "stateFederalUnit" : "TX",
+    "timeZone" : "America/Chicago"
+  },
+  "MKE" : {
+    "airportCode" : "MKE",
+    "stationName" : "Milwaukee",
+    "stateFederalUnit" : "WI",
+    "timeZone" : "America/Chicago"
+  },
+  "MSP" : {
+    "airportCode" : "MSP",
+    "stationName" : "Minneapolis/St. Paul (Terminal 2)",
+    "stateFederalUnit" : "MN",
+    "timeZone" : "America/Chicago"
+  },
+  "MBJ" : {
+    "airportCode" : "MBJ",
+    "stationName" : "Montego Bay",
+    "stateFederalUnit" : "Jamaica",
+    "timeZone" : "America/Jamaica"
+  },
+  "BNA" : {
+    "airportCode" : "BNA",
+    "stationName" : "Nashville",
+    "stateFederalUnit" : "TN",
+    "timeZone" : "America/Chicago"
+  },
+  "NAS" : {
+    "airportCode" : "NAS",
+    "stationName" : "Nassau",
+    "stateFederalUnit" : "Bahamas",
+    "timeZone" : "America/Nassau"
+  },
+  "MSY" : {
+    "airportCode" : "MSY",
+    "stationName" : "New Orleans",
+    "stateFederalUnit" : "LA",
+    "timeZone" : "America/Chicago"
+  },
+  "EWR" : {
+    "airportCode" : "EWR",
+    "stationName" : "New York/Newark",
+    "stateFederalUnit" : "NJ",
+    "timeZone" : "America/New_York"
+  },
+  "LGA" : {
+    "airportCode" : "LGA",
+    "stationName" : "New York (LaGuardia)",
+    "stateFederalUnit" : "NY",
+    "timeZone" : "America/New_York"
+  },
+  "ORF" : {
+    "airportCode" : "ORF",
+    "stationName" : "Norfolk",
+    "stateFederalUnit" : "VA",
+    "timeZone" : "America/New_York"
+  },
+  "OAK" : {
+    "airportCode" : "OAK",
+    "stationName" : "Oakland",
+    "stateFederalUnit" : "CA",
+    "timeZone" : "America/Los_Angeles"
+  },
+  "OKC" : {
+    "airportCode" : "OKC",
+    "stationName" : "Oklahoma City",
+    "stateFederalUnit" : "OK",
+    "timeZone" : "America/Chicago"
+  },
+  "OMA" : {
+    "airportCode" : "OMA",
+    "stationName" : "Omaha",
+    "stateFederalUnit" : "NE",
+    "timeZone" : "America/Chicago"
+  },
+  "ONT" : {
+    "airportCode" : "ONT",
+    "stationName" : "Ontario/LA",
+    "stateFederalUnit" : "CA",
+    "timeZone" : "America/Los_Angeles"
+  },
+  "SNA" : {
+    "airportCode" : "SNA",
+    "stationName" : "Orange County/Santa Ana",
+    "stateFederalUnit" : "CA",
+    "timeZone" : "America/Los_Angeles"
+  },
+  "MCO" : {
+    "airportCode" : "MCO",
+    "stationName" : "Orlando",
+    "stateFederalUnit" : "FL",
+    "timeZone" : "America/New_York"
+  },
+  "ECP" : {
+    "airportCode" : "ECP",
+    "stationName" : "Panama City Beach",
+    "stateFederalUnit" : "FL",
+    "timeZone" : "America/Chicago"
+  },
+  "PNS" : {
+    "airportCode" : "PNS",
+    "stationName" : "Pensacola",
+    "stateFederalUnit" : "FL",
+    "timeZone" : "America/Chicago"
+  },
+  "PHL" : {
+    "airportCode" : "PHL",
+    "stationName" : "Philadelphia",
+    "stateFederalUnit" : "PA",
+    "timeZone" : "America/New_York"
+  },
+  "PHX" : {
+    "airportCode" : "PHX",
+    "stationName" : "Phoenix",
+    "stateFederalUnit" : "AZ",
+    "timeZone" : "US/Arizona"
+  },
+  "PIT" : {
+    "airportCode" : "PIT",
+    "stationName" : "Pittsburgh",
+    "stateFederalUnit" : "PA",
+    "timeZone" : "America/New_York"
+  },
+  "PDX" : {
+    "airportCode" : "PDX",
+    "stationName" : "Portland",
+    "stateFederalUnit" : "OR",
+    "timeZone" : "America/Los_Angeles"
+  },
+  "PWM" : {
+    "airportCode" : "PWM",
+    "stationName" : "Portland",
+    "stateFederalUnit" : "ME",
+    "timeZone" : "America/New_York"
+  },
+  "PVD" : {
+    "airportCode" : "PVD",
+    "stationName" : "Providence",
+    "stateFederalUnit" : "RI",
+    "timeZone" : "America/New_York"
+  },
+  "PVR" : {
+    "airportCode" : "PVR",
+    "stationName" : "Puerto Vallarta",
+    "stateFederalUnit" : "MX",
+    "timeZone" : "America/Mexico_City"
+  },
+  "PUJ" : {
+    "airportCode" : "PUJ",
+    "stationName" : "Punta Cana",
+    "stateFederalUnit" : "DO",
+    "timeZone" : "America/Santo_Domingo"
+  },
+  "RDU" : {
+    "airportCode" : "RDU",
+    "stationName" : "Raleigh/Durham",
+    "stateFederalUnit" : "NC",
+    "timeZone" : "America/New_York"
+  },
+  "RNO" : {
+    "airportCode" : "RNO",
+    "stationName" : "Reno/Tahoe",
+    "stateFederalUnit" : "NV",
+    "timeZone" : "America/Los_Angeles"
+  },
+  "RIC" : {
+    "airportCode" : "RIC",
+    "stationName" : "Richmond",
+    "stateFederalUnit" : "VA",
+    "timeZone" : "America/New_York"
+  },
+  "ROC" : {
+    "airportCode" : "ROC",
+    "stationName" : "Rochester",
+    "stateFederalUnit" : "NY",
+    "timeZone" : "America/New_York"
+  },
+  "SMF" : {
+    "airportCode" : "SMF",
+    "stationName" : "Sacramento",
+    "stateFederalUnit" : "CA",
+    "timeZone" : "America/Los_Angeles"
+  },
+  "SLC" : {
+    "airportCode" : "SLC",
+    "stationName" : "Salt Lake City",
+    "stateFederalUnit" : "UT",
+    "timeZone" : "America/Denver"
+  },
+  "SAT" : {
+    "airportCode" : "SAT",
+    "stationName" : "San Antonio",
+    "stateFederalUnit" : "TX",
+    "timeZone" : "America/Chicago"
+  },
+  "SAN" : {
+    "airportCode" : "SAN",
+    "stationName" : "San Diego",
+    "stateFederalUnit" : "CA",
+    "timeZone" : "America/Los_Angeles"
+  },
+  "SFO" : {
+    "airportCode" : "SFO",
+    "stationName" : "San Francisco",
+    "stateFederalUnit" : "CA",
+    "timeZone" : "America/Los_Angeles"
+  },
+  "SJC" : {
+    "airportCode" : "SJC",
+    "stationName" : "San Jose",
+    "stateFederalUnit" : "CA",
+    "timeZone" : "America/Los_Angeles"
+  },
+  "SJO" : {
+    "airportCode" : "SJO",
+    "stationName" : "San Jose",
+    "stateFederalUnit" : "Costa Rica",
+    "timeZone" : "America/Costa_Rica"
+  },
+  "SJU" : {
+    "airportCode" : "SJU",
+    "stationName" : "San Juan",
+    "stateFederalUnit" : "PR",
+    "timeZone" : "America/Puerto_Rico"
+  },
+  "SEA" : {
+    "airportCode" : "SEA",
+    "stationName" : "Seattle/Tacoma",
+    "stateFederalUnit" : "WA",
+    "timeZone" : "America/Los_Angeles"
+  },
+  "GEG" : {
+    "airportCode" : "GEG",
+    "stationName" : "Spokane",
+    "stateFederalUnit" : "WA",
+    "timeZone" : "America/Los_Angeles"
+  },
+  "STL" : {
+    "airportCode" : "STL",
+    "stationName" : "St. Louis",
+    "stateFederalUnit" : "MO",
+    "timeZone" : "America/Chicago"
+  },
+  "TPA" : {
+    "airportCode" : "TPA",
+    "stationName" : "Tampa",
+    "stateFederalUnit" : "FL",
+    "timeZone" : "America/New_York"
+  },
+  "TUS" : {
+    "airportCode" : "TUS",
+    "stationName" : "Tucson",
+    "stateFederalUnit" : "AZ",
+    "timeZone" : "US/Arizona"
+  },
+  "TUL" : {
+    "airportCode" : "TUL",
+    "stationName" : "Tulsa",
+    "stateFederalUnit" : "OK",
+    "timeZone" : "America/Chicago"
+  },
+  "IAD" : {
+    "airportCode" : "IAD",
+    "stationName" : "Washington (Dulles)",
+    "stateFederalUnit" : "DC",
+    "timeZone" : "America/New_York"
+  },
+  "DCA" : {
+    "airportCode" : "DCA",
+    "stationName" : "Washington (Reagan National)",
+    "stateFederalUnit" : "DC",
+    "timeZone" : "America/New_York"
+  },
+  "PBI" : {
+    "airportCode" : "PBI",
+    "stationName" : "West Palm Beach",
+    "stateFederalUnit" : "FL",
+    "timeZone" : "America/New_York"
+  },
+  "ICT" : {
+    "airportCode" : "ICT",
+    "stationName" : "Wichita",
+    "stateFederalUnit" : "KS",
+    "timeZone" : "America/Chicago"
+  }
+}}
