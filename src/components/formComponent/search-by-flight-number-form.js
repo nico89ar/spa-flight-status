@@ -1,40 +1,38 @@
 import React, { Component } from 'react';
 import FlightNumberTextbox from "./flight-number-textbox";
 import FlightNumberTextboxValidator from "../../classes/formValidators/flightNumberTextboxValidator";
+import {withRouter} from "react-router-dom";
+import SubmitButton from "./submit-button";
 
 class SearchByFlightNumberForm extends Component {
 
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
 
         this.state = {
+            loading: false,
             flightNumber: "",
-            formErrors: {flightNumber: ""}
+            flightNumberError: ""
         };
     }
 
-    validateField(propertyName, value){
-        var formErrors = this.state.formErrors;
-        switch(propertyName) {
-            case 'flightNumber':
-                [value, formErrors.flightNumber] = FlightNumberTextboxValidator.validate(value, true);
-                break;
-            default:
-                break;
-        }
-        this.setState({formErrors: formErrors});
+    validateField(value){
+        let flightNumberError;
+        [value, flightNumberError] = FlightNumberTextboxValidator.validate(value, true);
+        this.setState({flightNumberError: flightNumberError});
     }
 
-    handleChange(propertyName, event) {
-        this.setState({[propertyName]: event.target.value});
+    handleChange(event) {
+        this.setState({flightNumber: event.target.value});
     }
 
-    handleBlur(propertyName, event){
-        this.validateField(propertyName, event.target.value);
+    handleBlur(event){
+        this.validateField(event.target.value);
     }
 
     handleSubmit(event) {
         event.preventDefault();
+
     }
 
     render() {
@@ -48,20 +46,21 @@ class SearchByFlightNumberForm extends Component {
                 </div>
 
                 <div className="row top-buffer">
-                    <div className="col-md-12">
+                    <div className="col">
                         <FlightNumberTextbox
+                            required
                             id="flight-number"
                             value={this.state.flightNumber}
                             label="FLIGHT NUMBER"
-                            onBlur={this.handleBlur.bind(this, "flightNumber")}
-                            onChange={this.handleChange.bind(this, "flightNumber")}
-                            errorMessage={this.state.formErrors.flightNumber}
+                            onBlur={this.handleBlur.bind(this)}
+                            onChange={this.handleChange.bind(this)}
+                            errorMessage={this.state.flightNumberError}
                         />
                     </div>
                 </div>
-                <div className="row bottom-buffer">
-                    <div className="col-md-10">
-                        <input type="submit" className="submit-button" value="Search" />
+                <div className="row top-buffer bottom-buffer">
+                    <div className="col">
+                        <SubmitButton loading={this.state.loading} />
                     </div>
                 </div>
             </form>
@@ -70,4 +69,4 @@ class SearchByFlightNumberForm extends Component {
 
 }
 
-export default SearchByFlightNumberForm;
+export default withRouter(SearchByFlightNumberForm);

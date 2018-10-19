@@ -6,7 +6,7 @@ class SearchByFlightPage extends Component {
 
     render() {
         return (
-            <div className="container container-centered">
+            <div className="container container-inner">
                 <SearchByFlightNumberForm/>
             </div>
         );

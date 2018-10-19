@@ -6,17 +6,22 @@ import FlightNumberTextbox from "./flight-number-textbox";
 import AirportCodeTextboxValidator from "../../classes/formValidators/airportCodeTextboxValidator";
 import DateDropdownValidator from "../../classes/formValidators/dateDropdownValidator";
 import FlightNumberTextboxValidator from "../../classes/formValidators/flightNumberTextboxValidator";
+import stations from '../../Assets/stations.json';
+import {withRouter} from "react-router-dom";
+import flightStatusClient from "../../classes/apiClients/flightStatusClient";
+import SubmitButton from "./submit-button";
 
 class SearchByRouteForm extends Component {
 
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         var today = moment();
         var tomorrow = moment(today).add(1, 'days');
         var yesterday = moment(today).subtract(1, 'days');
         this.dateOptions = {today: today, tomorrow: tomorrow, yesterday:yesterday};
-
+        this.stations = this.getStations();
         this.state = {
+            loading: false,
             departureAirport: "",
             arrivalAirport: "",
             departureDate: "today",
@@ -24,6 +29,18 @@ class SearchByRouteForm extends Component {
             formErrors: {departureAirport: "", arrivalAirport: "", departureDate: "", flightNumber: ""}
         };
     }
+
+    getStations() {
+        let fullDescriptionList = [];
+        for(const entry in stations.airStations) {
+            let station = stations.airStations[entry];
+            const fullDescription = `${station.stationName}, ${station.stateFederalUnit} - ${station.airportCode}`
+            fullDescriptionList.push(fullDescription);
+        }
+        return fullDescriptionList;
+    }
+
+
 
     validateField(propertyName, value){
         var formErrors = this.state.formErrors;
@@ -50,6 +67,11 @@ class SearchByRouteForm extends Component {
         this.setState({[propertyName]: event.target.value});
     }
 
+    handleStationChange(propertyName, value) {
+        this.setState({[propertyName]: value},
+            () => {this.validateField(propertyName, value)});
+    }
+
     handleBlur(propertyName, event){
         this.validateField(propertyName, event.target.value);
     }
@@ -68,11 +90,44 @@ class SearchByRouteForm extends Component {
 
     handleSubmit(event) {
         event.preventDefault();
+        for(let fieldName in this.state.formErrors) {
+            this.validateField(fieldName, this.state[fieldName]);
+            if(this.state.formErrors[fieldName]) {
+                var formHasErrors = true;
+            }
+        }
+
+        if(!formHasErrors) {
+            this.setState({loading: true});
+            flightStatusClient.getFlightStatus({
+                departureDate: this.dateOptions[this.state.departureDate].format('Y-MM-DD'),
+                departureAirport: this.state.departureAirport.substr(-3),
+                arrivalAirport: this.state.arrivalAirport.substr(-3),
+                flightNumber: this.state.flightNumber || ''
+            }).then(response => {
+                this.setState({loading: false});
+                this.props.history.push({
+                    pathname: '/flight-status/results',
+                    search: this.buildSearchByRouteQuery(),
+                    state: {response: response}
+                });
+            });
+        }
+    }
+
+
+    buildSearchByRouteQuery() {
+        const pathParams = '?departureDate=' + this.dateOptions[this.state.departureDate].format('Y-MM-DD')
+            + '&departureAirport=' + this.state.departureAirport.substr(-3)
+            + '&arrivalAirport=' + this.state.arrivalAirport.substr(-3)
+            + '&flightNumber=' + this.state.flightNumber;
+
+        return pathParams;
     }
 
     render() {
         return(
-            <form onSubmit={this.handleSubmit}>
+            <form onSubmit={this.handleSubmit.bind(this)}>
 
                 <div className="row top-buffer">
                     <div className="col">
@@ -81,13 +136,15 @@ class SearchByRouteForm extends Component {
                 </div>
 
                 <div className="row top-buffer">
-                    <div className="col-md-5">
+                    <div className="col">
                         <AirportCodeTextbox
                             id="departure-code"
+                            name={"departureAirport"}
                             value={this.state.departureAirport}
                             label="DEPARTURE CITY OR AIRPORT CODE"
+                            stations={this.stations}
                             required
-                            onBlur={this.handleBlur.bind(this, "departureAirport")}
+                            handleStationChange={this.handleStationChange.bind(this)}
                             onChange={this.handleChange.bind(this, "departureAirport")}
                             errorMessage={this.state.formErrors.departureAirport}
                         />
@@ -95,13 +152,15 @@ class SearchByRouteForm extends Component {
 
                     <a className="swap-button" onClick={this.handleSwap.bind(this)}><i className="fa fa-exchange" /></a>
 
-                    <div className="col-md-5">
+                    <div className="col">
                         <AirportCodeTextbox
                             id="arrival-code"
+                            name="arrivalAirport"
                             value={this.state.arrivalAirport}
                             label="ARRIVAL CITY OR AIRPORT CODE"
+                            stations={this.stations}
                             required
-                            onBlur={this.handleBlur.bind(this, "arrivalAirport")}
+                            handleStationChange={this.handleStationChange.bind(this)}
                             onChange={this.handleChange.bind(this, "arrivalAirport")}
                             errorMessage={this.state.formErrors.arrivalAirport}
                         />
@@ -109,7 +168,7 @@ class SearchByRouteForm extends Component {
                 </div>
 
                 <div className="row top-buffer">
-                    <div className="col-md-5">
+                    <div className="col">
                         <DateDropdown
                             id="departure-date"
                             options={this.dateOptions}
@@ -121,7 +180,7 @@ class SearchByRouteForm extends Component {
                             errorMessage={this.state.formErrors.departureDate}
                         />
                     </div>
-                    <div className="col-md-5">
+                    <div className="col">
                         <FlightNumberTextbox
                             id="flight-number"
                             value={this.state.flightNumber}
@@ -133,9 +192,9 @@ class SearchByRouteForm extends Component {
                     </div>
                 </div>
 
-                <div className="row bottom-buffer">
-                    <div className="col-md-10">
-                        <input type="submit" className="submit-button" value="Search" />
+                <div className="row top-buffer bottom-buffer">
+                    <div className="col">
+                        <SubmitButton loading={this.state.loading} />
                     </div>
                 </div>
             </form>
@@ -145,4 +204,4 @@ class SearchByRouteForm extends Component {
 
 }
 
-export default SearchByRouteForm;
+export default withRouter(SearchByRouteForm);

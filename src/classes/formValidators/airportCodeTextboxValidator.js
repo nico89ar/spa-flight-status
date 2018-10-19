@@ -24,7 +24,7 @@ class AirportCodeValidator {
         const stationsAreCompatible = !bothStationsAreInternational && !bothStationsAreSame;
         const updatedValue = (valuesIsFullDescription  || valueIsValidStation) && stationsAreCompatible ? fullDescription : '';
         let errorMessage = updatedValue ? '' : `Enter ${departureOrArrival} city or airport code.`;
-        errorMessage = !stationsAreCompatible ? `Invalid route with ${departureOrArrival} input` : errorMessage;
+        errorMessage = !stationsAreCompatible ? `Invalid route with ${departureOrArrival === 'arrival' ? 'departure' : 'arrival'} airport` : errorMessage;
         return [updatedValue, errorMessage];
     }
 }
